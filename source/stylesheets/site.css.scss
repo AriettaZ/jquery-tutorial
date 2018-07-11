@@ -46,3 +46,7 @@ h1,h2,h3,h4{
 table{
   font-family: 'Roboto Condensed', sans-serif;
 }
+/* e.g. replace this selector */
+.codehilite .hll { background-color: #ffffcc }
+/* with this one */
+.highlight .hll { background-color: #ffffcc }
