@@ -6,7 +6,16 @@
     <meta name="viewport"
           content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <!-- Use the title from a page's frontmatter if it has one -->
-    <title><%= current_page.data.title || "Middleman" %></title>
+    <!-- Use the title from a page's frontmatter if it has one -->
+    <title><%= current_page.data.title || "No Frontmatter" %></title>
+    <!-- Global css and linking -->
+    <base target="_top">
+    <link rel="stylesheet" href="stylesheets/site.css" />
+    <link rel="stylesheet" href="stylesheets/navigation.css" />
+    <link rel="stylesheet" href="stylesheets/footer.css" />
+    <link rel="stylesheet" href="stylesheets/fontawesome-5.1.0/css/all.css" />
+    <!-- Specific css for individual page -->
+    <link rel="stylesheet" href="stylesheets/<%= current_page.data.css %>"/>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <script type="text/javascript" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
@@ -15,7 +24,11 @@
     <%= javascript_include_tag "table" %>
     <%= javascript_include_tag "site" %>
   </head>
-  <body>
+  <body id="main">
+    <%= partial "navigation" %>
+    <div class="content-container">
     <%= yield %>
+    </div>
+    <%= partial "footer" %>
   </body>
 </html>

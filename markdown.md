@@ -1,22 +1,7 @@
-1. Overview & Introduction
-  1. What jQuery is
-  2. How to get (1. download 2. CDN)
-  3. comparison example
-  4. Is it the library/framework i should learn/use
-
-7. Plugin
-  1. recommendation list(validate, slider, URI)
-  2. How to use/where to get
-
-8. Javascript Knowledge
-  1. variables
-  2. functions
-
-
   1. Overview & Introduction
     - What jQuery is?
     jQuery is a feature-rich library written in Javascript which makes JavaScript development faster and easier.
-    - How to get (1. download 2. CDN)
+    - How to get
 
       1. Download the jQuery library from [jQuery.com](http://jquery.com/download/).
         1. To download the production version which has been minified and compressed for your live website:
@@ -204,7 +189,7 @@
       ```
 
 
-  8. Javascript Knowledge
+8. Javascript Knowledge
     1. data type
       - Integer
       - Real
@@ -223,10 +208,3 @@
 
       ```
     3. functions
-
-
-Moreover, if you start by learning to do things the easier way, you'll have that much harder a time motivating yourself to learn to do it the hard way.
-
-Learning the language first without the fancy frameworks builds character.
-
-Who knows, maybe you'll want to make your own framework someday. Or even work on a new version of JQuery. To do that, you'll need to know the language.
