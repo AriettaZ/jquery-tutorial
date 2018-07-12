@@ -92,6 +92,10 @@ Note:
 
 2. [optional] "speed" is a speed of animation , can be written in text or in millisecond
 
+3. [optional] callback is a function to be called after the animation execute
+
+4. If more than one animation is called at the same time, or an animation is called before the previous animation ends, an animation queue will hold all of them and execute one by one. So, all animations will eventually be executed.
+
 		<table>
 		<thead>
 		<tr>
@@ -123,12 +127,11 @@ Note:
 		</tbody>
 		</table>
 
-3. [optional] callback is a function to be called after the animation execute
-
-4. If more than one animation is called at the same time, or an animation is called before the previous animation ends, an animation **queue will hold all of them and execute one by one**. So, all animations will eventually be executed.
 
 ### Stop the execution of animation
+
 Stop an currently executing animation.
+
 <pre><code>
 //Syntax
 $(selector).stop(stopAll, goToEnd);
