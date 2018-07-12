@@ -1,0 +1,26 @@
+[
+  {
+    "selector": "$(\"ancestor descendant\")",
+    "description": "Selects all elements that are descendants of a specific ancestor.",
+    "example": "$(\"div p\")",
+    "selects": "All &lt;p&gt; elements that are descendants of &lt;div&gt; elements"
+  },
+  {
+    "selector": "$(\"parent &gt; child\")",
+    "description": "Selects all child elements specified by \"child\" of elements specified by \"parent\".",
+    "example": "$(\"div &gt; p\")",
+    "selects": "All &lt;p&gt; elements that are children of &lt;div&gt; elements"
+  },
+  {
+    "selector": "$(\"prev + next\")",
+    "description": "Selects all first \"next\" elements that follow right after the \"prev\" element.",
+    "example": "$(\"p + h2\")",
+    "selects": "All &lt;h2&gt; elements that are right after each &lt;p&gt; element"
+  },
+  {
+    "selector": "$(\"prev ~ next\")",
+    "description": "Selects all \"siblings\" elements that follow after the \"prev\" element.",
+    "example": "$(\"p ~ h3\")",
+    "selects": "All &lt;h3&gt; elements that are the following siblings of &lt;p&gt; elements"
+  }
+]
