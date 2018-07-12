@@ -1,53 +1,34 @@
-  7. Plugins
-      jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This adds on the flexibility and functionality of jQuery library. You can find a list of popular plugins from https://plugins.jquery.com/. But there're more than that!
-    - How to use the jQuery Plugins?
-      For jQuery Plugins, you need to include both plugin library and jQuery library in html file. Let's take [DataTable](https://datatables.net/) plugin as an example.
-      1. Include jQuery library, dataTable css and dataTable javascript library.
-      2. Select the table id and add DataTable style by adding ```$('#dorm-table').DataTable();``` to js file
-      3. You have your table with search, sorting, styling features!
+---
+title: jQuery Plugins
+---
+# Plugins
+jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This adds on the flexibility and functionality of jQuery library. You can find a list of popular plugins from https://plugins.jquery.com/. But there're more than that!
 
-      ```html
-      <!DOCTYPE html>
-      <html>
-        <head>
-          <meta charset="utf-8">
-          <title>Plugin Example</title>
-          <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-          <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
-          <script type="text/javascript" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+## How to use the jQuery Plugins?
+For jQuery Plugins, you need to include both plugin library and jQuery library in html file.
 
-        </head>
-        <body>
-          <div>
-            <h2>OSU Dorms</h2>
-            <table id="dorm-table">
-              <thead>
-                <tr>
-                  <th>Name</th>
-                  <th>Campus</th>
-                  <th>Area</th>
-                  <th>Hall Director</th>
-                  <th>Learning Community</th>
-                </tr>
-              </thead>
-              <tbody>
-                <% data.dorm.each do |dorm| %>
-                  <tr>
-                    <td><%= dorm["name"] %></td>
-                    <td><%= dorm["campus"] %></td>
-                    <td><%= dorm["area"] %></td>
-                    <td><%= dorm["hall_director"] %></td>
-                    <td><%= dorm["learning_community"] %></td>
-                  </tr>
-                <% end %>
-              </tbody>
-            </table>
-        </div>
-        <scripts>
-          $(document).ready( function () {
-              $('#dorm-table').DataTable();
-          } );
-        <scripts>
-        </body>
-      </html>
-      ```
+Let's take [DataTables](https://datatables.net/) plugin as an example. DataTables will help you build a table with minimum effort.
+
+The functions DataTables supports include: sorting, filtering, translation, styling, ajax loading and more.
+
+#### Step 1: Include jQuery library, dataTable css and dataTable javascript library.
+```html
+<head>
+  <meta charset="utf-8">
+  <title>Plugin Example</title>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
+  <script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+</head>
+```
+#### Step 2: Have a table ready. Give it a good structure with \<table\>, \<thead\>, \<tbody\>, \<tr\> and \<td\> elements.
+ <p data-height="265" data-theme-id="0" data-slug-hash="BPNZKb" data-default-tab="html,result" data-user="Arietta" data-embed-version="2" data-pen-title="Original Table" class="codepen">See the Pen <a href="https://codepen.io/Arietta/pen/BPNZKb/">Original Table</a> by Ariel Zhu (<a href="https://codepen.io/Arietta">@Arietta</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+#### Step 3: Select the table by id and add DataTable style by adding ```$('#tableid').DataTable();``` to javascript file
+ <p data-height="265" data-theme-id="0" data-slug-hash="XBbgzR" data-default-tab="js,result" data-user="Arietta" data-embed-version="2" data-pen-title="dataTable" class="codepen">See the Pen <a href="https://codepen.io/Arietta/pen/XBbgzR/">dataTable</a> by Ariel Zhu (<a href="https://codepen.io/Arietta">@Arietta</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+ <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+#### Step 4: Add a quick style to table by adding "display" class to table
+ <p data-height="265" data-theme-id="0" data-slug-hash="bjdRvG" data-default-tab="html,result" data-user="Arietta" data-embed-version="2" data-pen-title="dataTable with style" class="codepen">See the Pen <a href="https://codepen.io/Arietta/pen/bjdRvG/">dataTable with style</a> by Ariel Zhu (<a href="https://codepen.io/Arietta">@Arietta</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+ <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

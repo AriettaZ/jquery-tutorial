@@ -1,3 +1,6 @@
+---
+title: jQuery Selector
+---
 <h1>jQuery Selectors</h1>
   - JQuery selectors allow you to select one or more HTML elements based on the tag names, ids, classes, attributes, etc. After selecting an element, you can manipulate it.
   - All selectors start with the dollar sign and parentheses: $().
@@ -7,7 +10,7 @@
     - Selects all elements based on the elements tag name.
     - Syntax: write the element's tag name.
 
-        ```
+        ```javascript
           $("element")
         ```
     - Example: $("p") selects all \<p\> elements in the document
@@ -16,7 +19,7 @@
     - An id is unique within a page so the id selector is used to find a single element with the specific id.
     - Syntax: write a hash character (#) followed by the value of the id attribute of the element.
 
-        ```
+        ```javascript
           $("#id")
         ```
     - Example: $("p#test-id") selects the \<p\> element that has an id "test-id".
@@ -25,7 +28,7 @@
     - Selects all elements with a specific class.
     - Syntax: write a period character (.) followed by the name of the class.
 
-        ```
+        ```javascript
           $(".class")
         ```
     - Example: $("p.test-class") selects all \<p\> elements that have a class "test-class".
@@ -41,7 +44,7 @@
     - Selects all elements that have specific attribute.
     - Syntax: write the attribute name inside of the square brackets([ ]).
 
-        ```
+        ```javascript
           $("[attribute]")
         ```
     - Example: $("[href]") selects all elements that have a href attribute.
@@ -50,7 +53,7 @@
     - Selects all elements that have specific attribute with specific value.
     - Syntax: write the attribute name and its value inside of the square brackets([ ]) connecting by the equal sign(=).
 
-        ```
+        ```javascript
           $("[attribute=value]")
         ```
     - Example: $("[type='text']") selects elements that have a type attribute with value "text".
@@ -59,7 +62,7 @@
     - Selects elements that have the specific attribute with a value starting with the specific value.
     - Syntax: write the attribute and its value inside of the square brackets([ ]) connecting by the caret(^) and the equal sign(=).
 
-        ```
+        ```javascript
           $("[attribute^=value]")
         ```
     - Example: $("[title^='Hi']") selects all elements that have a title attribute whose value is starting with "Hi".
@@ -75,7 +78,7 @@
     - Selects all elements that are the first child of their parent.
     - Syntax:
 
-        ```
+        ```javascript
           $(":first-child")
         ```
     - Example: $("p:first-child") selects all \<p\> elements that are the first child of their parent
@@ -84,7 +87,7 @@
     -  Selects all elements that are the first child of a specific type of their parent.
     -  Syntax:
 
-        ```
+        ```javascript
           $(":first-of-type")
         ```
     - Example: $("p:first-of-type") selects all \<p\> elements that are the first \<p\> element of their parent
@@ -93,7 +96,7 @@
     - Selects all elements that are the nth-child of their parent, counting from the last element(index = 1) to the first.
     - Syntax:
 
-        ```
+        ```javascript
           $(":nth-last-child(index/even/odd/equation)")
         ```
     - Example: $("p:nth-last-child(1)") selects all \<p\> elements that are the last child of their parent.
@@ -109,7 +112,7 @@
     - Selects all elements that contain specific text.
     - Syntax:
 
-        ```
+        ```javascript
           $(":contains(text)")
         ```
     - Example: $("p:contains(hello)") selects all \<p\> elements that contain "hello"
@@ -118,7 +121,7 @@
     - Selects all elements that have no children (including text).
     - Syntax:
 
-        ```
+        ```javascript
           $(":empty")
         ```
     - Example: $("td:empty") selects all empty \<td\> elements
@@ -127,7 +130,7 @@
     - Selects elements which contain the element(s) that matches the specific selector.
     - Syntax:
 
-        ```
+        ```javascript
           $(":has(selector)")
         ```
     - Example: $("div:has(p)") selects all \<div\> elements that have \<p\> element(s) inside of them
@@ -136,7 +139,7 @@
     - Selects all elements that are the parent of another element (including text).
     - Syntax:
 
-        ```
+        ```javascript
           $(:parent)
         ```
     - Example: $(button:parent) selects all \<button\> elements that are the parent of another element.
@@ -151,7 +154,7 @@
     - Selects all button elements and elements of type button.
     - Syntax:
 
-        ```
+        ```javascript
           $(":button")
         ```
     - Example: $(.class-name:button) selects all input elements of type button whose class is "class-name".
@@ -160,7 +163,7 @@
     - Selects all elements that are checked.
     - Syntax:
 
-        ```
+        ```javascript
           $(":checked")
         ```
     - Example: $(".class-name:checked") selects all elements with class "class-name" that are checked.
@@ -169,7 +172,7 @@
     - Selects elements that are currently focused.
     - Syntax:
 
-        ```
+        ```javascript
         $(":focus")
         ```
     - Example: $(".class-name:focus") selects the element with class "class-name" that are currently focused.
@@ -186,7 +189,7 @@
     - Selects all elements that are descendants of a specific ancestor.
     - Syntax:
 
-        ```
+        ```javascript
         $("ancestor descendant")
         ```
     - Example: $("div p") selects all \<p\> elements that are descendants of \<div\> elements
@@ -195,7 +198,7 @@
     - Selects all direct child elements specified by "child" of elements specified by "parent".
     - Syntax:
 
-        ```
+        ```javascript
         $("parent > child")
         ```
     - Example: $("div > p") selects all \<p\> elements that are children of \<div\> elements
@@ -204,7 +207,7 @@
     - Selects all first "next" elements that follow after the "prev" element.
     - Syntax:
 
-        ```
+        ```javascript
         $("prev + next")
         ```
     - Example: $("p + h2") selects all \<h2\> elements that are right after each \<p\> elements
@@ -213,7 +216,7 @@
     - Selects all "siblings" elements that follow after the "prev" element
     - Syntax:
 
-        ```
+        ```javascript
           $("prev ~ siblings")
         ```
     - Example: $("p ~ h3") selects all \<h3\> elements that are the following siblings of \<p\> elements
@@ -228,7 +231,7 @@
     - Selects all elements that are hidden.
     - Syntax:
 
-        ```
+        ```javascript
           $("[selector]:hidden")
         ```
     - Example: $("button:hidden") selects all hidden buttons
@@ -237,7 +240,7 @@
     - Selects all elements that are visible.
     - Syntax:
 
-        ```
+        ```javascript
           $("[selector]:visible")
         ```
     - Example: $("button:visible") selects all visible buttons

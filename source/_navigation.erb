@@ -1,91 +1,56 @@
-<!--
-  Created by: Channing Jacobs
-  Date: 6/20
-  Description: Layout of the navigation bar for use at the top of each page.
-  Edit: 6/23 Ariel add icons and background for active nav element
--->
-<!-- <div class="navbar">
-  <nav id="sitenav">
-    <a href="index.html" <%= current_page.data.title=="Christopher Stewart"? "class='active'><i class='fas fa-home'></i>":">" %>  Home</a>
-    <a href="publication.html" <%= current_page.data.title=="Publication"? "class='active'><i class='fas fa-book-open'></i>":">" %>   Publications</a>
-    <a href="awards.html" <%= current_page.data.title=="Awards"? "class='active'><i class='fas fa-award'></i>":">" %>   Awards</a>
-    <div class='dropdown<%= current_page.data.title=="Lab"? " active'><i class='fas fa-flask'></i>":"' >" %>
-      Lab
-      <div class="dropdown-content">
-        <a href="lab.html" <%= current_page.data.title=="Lab"? "class='active'><i class='fas fa-flask'></i>":">" %>    Lab</a>
-        <a href="lab.html#people_nav">   People</a>
-        <a href="lab.html#project_nav">    Projects</a>
-      </div>
-    </div>
-    <a href="contact.html" <%= current_page.data.title=="Contact Information"? "class='active'><i class='fas fa-envelope'></i>":">" %>  Contact</a>
-  </nav>
-</div> -->
 <div class="navigation">
   <h1>jQuery</h1>
-    <h1>Quick Start Guild</h1>
+  <h1>Quick Start Guild</h1>
+  <ol>
+  <li><a href="/index.html">Overview</a>
+    <ul>
+      <li><a href="/index.html#intro">What is jQuery</li>
+      <li><a href="/index.html#reason">Why use jQuery</li>
+    </ul>
+  </li>
 
-<ol>
-<li><a href="/overview.html">Overview</a>
-  <ul>
-    <li>What is jQuery</li>
-    <li>How to import jQuery Library</li>
-    <li>Why use jQuery</li>
-  </ul>
-</li>
+  <li><a href="/selectors.html">jQuery Selectors</a>
+    <ul>
+      <li><a href="/selectors.html#basic">Basic Selectors</a></li>
+      <li><a href="/selectors.html#attribute">Attribute Selectors</a></li>
+      <li><a href="/selectors.html#child">Child Selectors</a></li>
+      <li><a href="/selectors.html#content">Content Selectors</a></li>
+      <li><a href="/selectors.html#form">Form Selectors</a></li>
+      <li><a href="/selectors.html#hierarchy">Hierarchy</a></li>
+      <li><a href="/selectors.html#visibility">Visibility Selectors</a></li>
+    </ul>
+  </li>
 
-<li><a href="/selectors.html">jQuery Selectors</a>
-  <ul>
-    <li><a href="/selectors.html#basic">Basic Selectors</a></li>
-    <li><a href="/selectors.html#attribute">Attribute Selectors</a></li>
-    <li><a href="/selectors.html#child">Child Selectors</a></li>
-    <li><a href="/selectors.html#content">Content Selectors</a></li>
-    <li><a href="/selectors.html#form">Form Selectors</a></li>
-    <li><a href="/selectors.html#hierarchy">Hierarchy</a></li>
-    <li><a href="/selectors.html#visibility">Visibility Selectors</a></li>
-  </ul>
-</li>
+  <li><a href="/traversal.html">jQuery Traversing</a>
+    <ul>
+      <li>HTML Tree Traversal</li>
+      <li>Iteration</li>
+    </ul>
+  </li>
 
-<li><a href="/traversal.html">jQuery Traversing</a>
-  <ul>
-    <li>HTML Tree Traversal</li>
-    <li>Iteration</li>
-  </ul>
-</li>
+  <li><a href="/manipulation.html">HTML/CSS Manipulation</a>
+    <ul>
+      <li>HTML</li>
+      <li>CSS</li>
+    </ul>
+  </li>
 
-<li><a href="/manipulation.html">HTML/CSS Manipulation</a>
-  <ul>
-    <li>HTML</li>
-    <li>CSS</li>
-  </ul>
-</li>
+  <li><a href="/animation.html">Event and animation</a>
+    <ul>
+      <li>Event</li>
+      <li>Animation</li>
+    </ul>
+  </li>
 
-<li><a href="/animation.html">Event and animation</a>
-  <ul>
-    <li>Event</li>
-    <li>Animation</li>
-  </ul>
-</li>
+  <li><a href="/ajax.html">Ajax</a>
+    <ul>
+      <li>Client-server model</li>
+      <li>Ajax APIs</li>
+    </ul>
+  </li>
 
-<li><a href="/ajax.html">Ajax</a>
-  <ul>
-    <li>Client-server model</li>
-    <li>Ajax APIs</li>
-  </ul>
-</li>
-
-<li><a href="/plugin.html">Plugins</a>
-  <ul>
-    <li>Example</li>
-  </ul>
-</li>
-
-<li><a href="/javascript.html">Javascript</a>
-  <ul>
-    <li>Data type</li>
-    <li>Initiate variables</li>
-    <li>Functions</li>
-  </ul>
-</li>
-</ol>
+  <li><a href="/plugin.html">Plugins</a>
+  </li>
+  </ol>
 
 </div>

@@ -1,3 +1,6 @@
+---
+title: jQuery Traversal
+---
 <h1>jQuery Traversing</h1>
   - JQuery provides a variety of traversal methods to help select HTML elements based on their relations to other elements. After selecting an element, you can access its ancestors(parent, grandparent, etc), descendants(child, grandchild, etc) and siblings(share the same parent).
 
@@ -11,7 +14,7 @@
     - Gets the parent of the selected element, optionally filtered by a selector.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).parent([selector])
         ```
     - Example: $(“p”).parent() returns the parent of \<p\> elements.
@@ -20,7 +23,7 @@
     - Gets all ancestors of the selected element, optionally filtered by a selector.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).parents([selector])
         ```
     - Example: $(“span”).parents() returns all ancestors of the \<span\> elements.
@@ -29,7 +32,7 @@
     - Gets all ancestors of the selected element up to but not including the element that matches the optional selector, optionally filtered by a filter.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).parentsUntil([selector] [, filter])
         ```
     - Example: $(“span”).parentsUntil(“div”) returns all ancestors between \<span\> and \<div\> elements (exclusive).
@@ -48,7 +51,7 @@
     - Gets all children of the selected element, optionally filtered by a selector.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).children([selector])
         ```
     - Example: $(div).children() returns all child elements of all div elements.
@@ -57,7 +60,7 @@
     - Gets all descendants of the selected element, filtered by a selector.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).find(selector)
         ```
     - Example: $(“div”).find(“li”) returns all \<li\> elements that are descendants of \<div\> elements
@@ -76,7 +79,7 @@
     - Gets the immediately following sibling of the selected element, optionally filtered by a selector.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).next([selector])
         ```
     - Example: $(“h2”).next() returns the immediately following sibling of the \<h2\> elements.
@@ -85,7 +88,7 @@
     - Gets all following siblings of the selected element, optionally filtered by a selector.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).nextAll([selector])
         ```
     - Example: $(“h2”).nextAll() returns all following siblings of the \<h2\> elements.
@@ -94,7 +97,7 @@
     - Gets all following siblings of the selected element up to but not including the element that matches the selector, optionally filtered by a filter.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).nextUntil([selector][, filter])
         ```
     - Example: $(“h2”).nextUntil(“ul”) returns all following siblings between \<h2\> and \<ul\> elements (exclusive).
@@ -103,7 +106,7 @@
     - Gets all the siblings of the selected element, optionally filtered by a selector.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).siblings([selector])
         ```
     - Example: $(“p”).siblings() returns all the siblings of the \<p\> elements.
@@ -118,7 +121,7 @@
     - Gets the element with the specific index number of the selected elements.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).eq(index)
         ```
     - Example:$(“li”).eq(1) returns the second \<li\> element in the document.
@@ -127,7 +130,7 @@
     - Gets the first element of the selected elements.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).first()
         ```
     - Example: $(“li”).first() returns the first \<li\> element in the document.
@@ -136,7 +139,7 @@
     - Gets the elements that matches the selector or pass the function’s test.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).filter(selector/function)
         ```
     - Example:$(“p”).filter(“.test-class”) returns \<p\> elements that have a class “test-class”
@@ -145,7 +148,7 @@
     - Gets all elements inside of the selected elements that don’t match the selector.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).not(selector)
         ```
     - Example: $(“p”).not(“.test-class”) returns \<p\> elements that do not have a class “test-class”.
@@ -161,7 +164,7 @@
     - Executes a function for each element in the selected elements.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).each(function)
         ```
     - Example: $("p.class-name").each(function(){this.innerHTML += " executes function"});executes the function that adds " executes function" to the end of the text for each \<p\> element that has a class “class-name”.
@@ -170,7 +173,7 @@
     - Passes each element in the selected elements through a function, creating a new jQuery object containing the return values.
     - Syntax:
 
-        ```
+        ```javascript
           $(selector).map(callback)
         ```
     - Example: $("div").map(function(){return this.id;}) creates a new jQuery object containing each \<div\> element’s id.
