@@ -15,11 +15,44 @@ body {
 }
 
 .content-container {
-    margin: 40px auto 0px auto;
-    width: 70%;
+    left:28%;
+    width:67%;
     z-index: 5;
     position:relative;
-    top:3em;
+    display: block;
+}
+.navigation{
+    top:0px;
+    width: 25%;
+    display: block;
+    position: fixed;
+    height: 100%;
+    background-color: #6d0f09;
+    color: white;
+    h1,h2,h3,h4,a,a:visited{
+      color:white;
+      text-align: center;
+    }
+}
+
+footer {
+  height: 5em;
+  width: 75%;
+  float:right;
+  background-color: #6d0f09;
+  position: relative;
+  top: 3em; }
+
+footer p {
+  color: white;
+  line-height: 5em;
+  text-align: center;
+  margin: 0;
+  }
+
+footer a {
+  color: white;
+  padding-left: 1em;
 }
 
 // Set the color of the hyper link.
