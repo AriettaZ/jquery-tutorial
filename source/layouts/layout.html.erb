@@ -11,19 +11,11 @@
     <!-- Global css and linking -->
     <base target="_top">
     <link rel="stylesheet" href="stylesheets/site.css" />
-    <link rel="stylesheet" href="stylesheets/navigation.css" />
-    <link rel="stylesheet" href="stylesheets/footer.css" />
     <link rel="stylesheet" href="stylesheets/fontawesome-5.1.0/css/all.css" />
-    <!-- Specific css for individual page -->
-    <link rel="stylesheet" href="stylesheets/<%= current_page.data.css %>"/>
+    <%= stylesheet_link_tag "highlighting" %>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="stylesheet" href="http://cdn.datatables.net/1.10.19/css/jquery.dataTables.min.css">
     <script type="text/javascript" src="http://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
-    <%= stylesheet_link_tag "site" %>
-    <%= stylesheet_link_tag "table" %>
-    <%= stylesheet_link_tag "highlighting" %>
-    <%= javascript_include_tag "table" %>
-    <%= javascript_include_tag "site" %>
     <!-- <%= Rouge::Themes::ThankfulEyes.render(:scope => '.highlight') %> -->
   </head>
   <body id="main">
