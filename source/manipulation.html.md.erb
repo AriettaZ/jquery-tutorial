@@ -17,6 +17,7 @@ Once you have selected a set of one or more objects, you may interact with their
 
 There are four methods to access and update web page content. The .text() method is used to get or replace text. The .html() method gets or replaces html. The .val() method gets or replaces form text data. Finally, the .attr() method gets or replaces elements’ attributes. Each method and its use cases is listed below.
 
+#### .text()
 ```javascript
     .text()
     .text(new_text)
@@ -28,31 +29,41 @@ There are four methods to access and update web page content. The .text() method
 
 **Notes:** The .text() method may be used on XML and HTML documents. Whitespace may vary due to HTML parser used by each browser. The value of form elements can’t be set or accessed with .text(); use .val() for these elements. This method escapes the provided String (by calling .createTextNode()) to avoid rendering errors (Ex: “This <div> should be literal.” is transformed into “This &lt;div&gt; should be literal.”).
 
+**Example:**
   <p data-height="265" data-theme-id="0" data-slug-hash="BPNbzM" data-default-tab="html,result" data-user="channingjacobs" data-embed-version="2" data-pen-title="BPNbzM" class="codepen">See the Pen <a href="https://codepen.io/channingjacobs/pen/BPNbzM/">BPNbzM</a> by ChanningJacobs (<a href="https://codepen.io/channingjacobs">@channingjacobs</a>) on <a href="https://codepen.io">CodePen</a>.</p>
   <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
+#### .html()
 ```javascript
     .html()
     .html(new_html)
     .html(function(index, old_html))
 ```
-- Returns the html contents of the first element in the set of selected elements. (Ex: <div><p>Text</p></div> is in the first selected element. .html() outputs: <p>Text</p>)
+- The .html() method returns the html contents of the first element in the set of selected elements.
 - Each selected element will replace its html content with the provided valid html string new_html.
 - A user defined function may be passed if it returns a valid html string. See .text() for more detail.
 
 **Notes:** The .html() method can’t be called on XML documents. The browser’s innerHTML property is used to retrieve html content. This means that formatting of the HTML may differ from the original document.
 
+**Example:**
+<p data-height="431" data-theme-id="0" data-slug-hash="oMXVNe" data-default-tab="result" data-user="channingjacobs" data-embed-version="2" data-pen-title="oMXVNe" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/channingjacobs/pen/oMXVNe/">oMXVNe</a> by ChanningJacobs (<a href="https://codepen.io/channingjacobs">@channingjacobs</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+#### .val()
 ```javascript
     .val()
     .val(new_value)
     .val(function(index,value))
 ```
-- Returns the value of form elements or undefined if called on an empty collection. Examples of form elements include: input, select, textarea, and checkboxes.
-- Sets the value of form elements. The value may be  a string, number, or array of strings (one string for each selected element).
+- The .val() method returns the value of form elements. Examples of form elements include: input, select, textarea, and checkboxes.
+- The user may provide a new_value to replace in form elements. The new_value may be a string, number, or array of strings (one string is used for each selected element).
 - A user function may be passed if it returns a valid value string. See .text() for more detail.
 
-**Note:** A select element with multiple attribute will return an array of values for each selected option when .val() is called.
+**Notes:** A select element with multiple attribute will return an array of values for each selected option when .val() is called. The .val() method will return undefined if called on an empty collection.
 
+**Example:**
+
+#### .attr()
 ```javascript
     .attr(attr_name)
     .attr(attr_name, new_value)
