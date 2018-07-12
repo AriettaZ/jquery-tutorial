@@ -180,7 +180,7 @@
 
 
 <h2 id="hierarchy">Hierarchy</h2>
-  - Hierarchy helps selects elements based on the hierarchy in the HTML tree.
+  - Hierarchy helps selects elements based on the hierarchy in the DOM tree.
   - An ancestor is a parent, grandparent, etc. A descendant is a child, grandchild, etc. Detailed explaination can be found in [jQuery Traversal](/traversal.html).
   - Descendant selector ("ancestor descendant")
     - Selects all elements that are descendants of a specific ancestor.
@@ -201,13 +201,13 @@
     - Example: $("div > p") selects all \<p\> elements that are children of \<div\> elements
 
   - Next adjacent selector ("prev + next")
-    - Selects all first "next" elements that follow after the "prev" element.
+    - Selects all first "next" elements that follow right after the "prev" element.
     - Syntax:
 
         ```
         $("prev + next")
         ```
-    - Example: $("p + h2") selects all \<h2\> elements that are right after each \<p\> elements
+    - Example: $("p + h2") selects all \<h2\> elements that are right after each \<p\> element
 
   - Next Siblings selector
     - Selects all "siblings" elements that follow after the "prev" element
