@@ -1,0 +1,199 @@
+<h1>jQuery Selectors</h1>
+  - JQuery selectors allow you to select one or more HTML elements based on the tag names, ids, classes, attributes, etc. After selecting an element, you can manipulate it.
+  - All selectors start with the dollar sign and parentheses: $().
+
+<h2>Basic Selectors</h2>
+  - The element Selector
+    - Selects all elements based on the elements tag name.
+    - Syntax: write the element's tag name.
+    ```
+    $("element")
+    ```
+    - Example: $("p") selects all \<p\> elements in the document
+
+  - The #id Selector
+    - An id is unique within a page so the id selector is used to find a single element with the specific id.
+    - Syntax: write a hash character (#) followed by the value of the id attribute of the element.
+    ```
+    $("#id")
+    ```
+    - Example: $("p#test-id") selects the \<p\> element that has an id "test-id".
+
+  - The .class Selector
+    - Selects all elements with a specific class.
+    - Syntax: write a period character (.) followed by the name of the class.
+    ```
+    $(".class")
+    ```
+    - Example: $("p.test-class) selects all \<p\> elements that have a class "test-class".
+
+<p data-height="325" data-theme-id="0" data-slug-hash="ZjYONr" data-default-tab="html,result" data-user="ctz33" data-embed-version="2" data-pen-title="JQuery Tutorial" class="codepen">See the Pen <a href="https://codepen.io/ctz33/pen/ZjYONr/">JQuery Tutorial</a> by ctz33 (<a href="https://codepen.io/ctz33">@ctz33</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<script async src="https://static.codepen.io/assets/embed/ei.js"></script>
+
+<h2>Attribute Selectors</h2>
+  - Attribute selectors help select elements based on attribute name and value.
+  - The Has Attribute Selector [attribute]
+    - Selects all elements that have specific attribute.
+    - Syntax: write the attribute name inside of the square brackets([ ]).
+    ```
+    $("[attribute]")
+    ```
+    - Example: $("[href]") selects all elements that have a href attribute.
+
+  - The Attribute Equals Selector [attribute=value]
+    - Selects all elements that have specific attribute with specific value.
+    - Syntax: write the attribute name and its value inside of the square brackets([ ]) connecting by the equal sign(=).
+    ```
+    $("[attribute=value]")
+    ```
+    - Example: $("[type='text']") selects elements that have a type attribute with value "text".
+
+  - The Attribute Starts With Selector [attribute^=value]
+    - Selects elements that have the specific attribute with a value starting with the specific value.
+    - Syntax: write the attribute and its value inside of the square brackets([ ]) connecting by the caret(^) and the equal sign(=).
+    ```
+    $("[attribute^=value]")
+    ```
+    - Example: $("[title^='Hi']") selects all elements that have a title attribute whose value is starting with "Hi".
+  - For a complete reference of all the jQuery attribute selectors, please go to our [jQuery Selectors Reference](selector_reference.html #attribute-selector).
+
+<h2>Child Selectors</h2>
+  - Child selectors help select child elements of parent elements easily.
+  - :first-child
+    - Selects all elements that are the first child of their parent.
+    - Syntax:
+    ```
+    $(":first-child")
+    ```
+    - Example: $("p:first-child") selects all \<p\> that are the first child of their parent
+
+  - :first-of-type
+    -  Selects all elements that are the first child of a specific type of their parent.
+    -  Syntax:
+    ```
+    $(":first-of-type")
+    ```
+    - Example: $("p:first-of-type") selects all \<p\> that are the first \<p\> of their parent
+
+  - :nth-last-child(n)
+    - Selects all elements that are the nth-child of their parent, counting from the last element(index = 1) to the first.
+    - Syntax:
+    ```
+    $(":nth-last-child(index/even/odd/equation)")
+    ```
+    - Example: $("p:nth-last-child(1)") selects all \<p\> that are the last child of their parent
+  - For a complete reference of all the jQuery child selectors, please go to our [jQuery Selectors Reference](selector_reference.html #child-selector).
+
+<h2>Content Selectors</h2>
+  - Content selectors help select elements based on their contents.
+  - :contains(text)
+    - Selects all elements that contain specific text.
+    - Syntax:
+    ```
+    $(":contains(text)")
+    ```
+    - Example: $("p:contains(hello)") selects all \<p\> that contain "hello"
+
+  - :empty
+    - Selects all elements that have no children (including text).
+    - Syntax:
+    ```
+    $(":empty")
+    ```
+    - Example: $("td:empty") selects all empty \<td\>
+
+  - :has(selector)
+    - Selects elements which contain the element(s) that matches the specific selector.
+    - Syntax:
+    ```
+    $(":has(selector)")
+    ```
+    - Example: $("div:has(p)") selects all \<div\> that have \<p\> inside of them
+
+  - :parent
+    - Selects all elements that are the parent of another element (including text).
+    - Syntax:
+    ```
+    $(:parent)
+    ```
+    - Example: $(div:parent) selects all \<div\> that are the parent of another element.
+
+<h2>Form Selectors</h2>
+  - Form selectors help select HTML form elements.
+  - :button
+    - Selects all button elements and elements of type button.
+    - Syntax:
+    ```
+    $(":button")
+    ```
+    - Example: $(#id-name:button) selects all input elements of type button whose id is "id-name"
+
+  - :checked
+    - Selects all elements that are checked.
+    - Syntax:
+    ```
+    $(":checked")
+    ```
+    - Example: $(#id-name:checked) selects all elements that are checked whose id is "id-name"
+
+  - :focus
+    - Selects elements that are currently focused.
+    - Syntax:
+    ```
+    $(":focus")
+    ```
+    - Example: $(".box:focus") selects all elements with class "box" that are currently focused.
+
+  - For a complete reference of all the jQuery child selectors, please go to our [jQuery Selectors Reference](selector_reference.html #form-selector).
+
+<h2>Hierarchy</h2>
+  - Hierarchy helps selects elements based on the hierarchy in the HTML tree.
+  - An ancestor is a parent, grandparent, etc. A descendant is a child, grandchild, etc. Detailed explaination can be found in [jQuery Traversal](traversal.html).
+  - Descendant selector ("ancestor descendant")
+    - Selects all elements that are descendants of a specific ancestor.
+    - Syntax:
+    ```
+    $("ancestor descendant")
+    ```
+    - Example: $("div p") selects all \<p\> that are descendants(inside) of \<div\>
+
+  - Child selector ("parent > child")
+    - Selects all direct child elements specified by "child" of elements specified by "parent".
+    - Syntax:
+    ```
+    $("parent > child")
+    ```
+    - Example: $("div > p") selects all \<p\> that are children of \<div\>
+
+  - Next adjacent selector ("prev + next")
+    - Selects all first "next" elements that follow after the "prev" element.
+    - Syntax:
+    ```
+    $("prev + next")
+    ```
+    - Example: $("p + h2") selects all \<h2\> that are right after each \<p\>
+
+  - Next Siblings selector
+    - Selects all "siblings" elements that follow after the "prev" element
+    - Syntax:
+    ```
+    $("prev ~ siblings")
+    ```
+    - Example: $("p ~ h2") selects all \<h2\> that are following siblings of \<p\>
+
+<h2>Visibility Filter</h2>
+  - :hidden
+    - Selects all elements that are hidden.
+    - Syntax:
+    ```
+    $("[selector]:hidden")
+    ```
+    - Example: $("button:hidden") selects all hidden buttons
+
+  - :visible
+    - Selects all elements that are visible.
+    - Syntax:
+    ```
+    $("[selector]:visible")
+    ```
+    - Example: $("button:visible") selects all visible buttons
