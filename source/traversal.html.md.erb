@@ -17,7 +17,7 @@ Description: jQuery Traversing Tutorial -->
     - The \<ul\> element is the parent and the ancestor of three \<li\> elements.
     - The \<body\> element is the ancestor of all the other elements.
     - The \<div\> element is the ancestor of \<h2\>, \<p\>, \<ul\>, \<li\> elements.
-    <br/><img src="/images/HTMLTree.png" title="DOMTree" alt="Image not found">
+    <br/><img src="/images/DOMTree.png" title="DOMTree" alt="Image not found">
 
   - .parent()
     - Gets the parent of the selected element, optionally filtered by a selector.
@@ -42,7 +42,7 @@ Description: jQuery Traversing Tutorial -->
     - Syntax:
 
         ```javascript
-          $(selector).parentsUntil([selector] [, filter])
+          $(selector).parentsUntil([selector][, filter])
         ```
     - Example: $("span").parentsUntil("div") returns all ancestors between \<span\> and \<div\> elements (exclusive).
 
@@ -67,7 +67,7 @@ Description: jQuery Traversing Tutorial -->
         ```javascript
           $(selector).children([selector])
         ```
-    - Example: $(div).children() returns all child elements of all div elements.
+    - Example: $("div").children() returns all child elements of all \<div\> elements.
 
   - .find()
     - Gets all descendants of the selected element, filtered by a selector.
