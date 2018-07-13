@@ -46,7 +46,6 @@ There are **three ways** to register event listener.
 ##### 1.Register single event listener:
 
 ```javascript
-//Syntax
 $("selector").eventName(function(){...});
 ```
 
@@ -54,15 +53,16 @@ $("selector").eventName(function(){...});
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ##### 2. Register single event listener (Recommended):
-<pre><code>//Syntax
+
+```
 $("selector").on(eventName, function(){...});
-</code></pre>
+```
 <p data-height="346" data-theme-id="0" data-slug-hash="OwPYXQ" data-default-tab="html,result" data-user="mikelin2018" data-embed-version="2" data-pen-title="Register single event listener 2" class="codepen">See the Pen <a href="https://codepen.io/mikelin2018/pen/OwPYXQ/">Register single event listener 2</a> by Mike_Lin (<a href="https://codepen.io/mikelin2018">@mikelin2018</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ##### 3. Register multiple event listener:
+
 ```javascript
-//Syntax
 $("selector").on({
 eventName1: function(){...},
 eventName2: function(){...},
@@ -84,7 +84,6 @@ Note: Add parenthesis to eventName is optional
 Create animation to move and change the selected elements.
 
 ```javascript
-//Syntax
 $("selector").animate({parameters}, speed, callback);
 ```
 <p data-height="355" data-theme-id="0" data-slug-hash="BPyemP" data-default-tab="html,result" data-user="mikelin2018" data-embed-version="2" data-pen-title="BPyemP" class="codepen">See the Pen <a href="https://codepen.io/mikelin2018/pen/BPyemP/">BPyemP</a> by Mike_Lin (<a href="https://codepen.io/mikelin2018">@mikelin2018</a>) on <a href="https://codepen.io">CodePen</a>.</p>
@@ -133,7 +132,6 @@ Note:
 Stop an currently executing animation.
 
 ```javascript
-//Syntax
 $("selector").stop(stopAll, goToEnd);
 ```
 <p data-height="417" data-theme-id="0" data-slug-hash="KBwLBj" data-default-tab="html,result" data-user="mikelin2018" data-embed-version="2" data-pen-title="KBwLBj" class="codepen">See the Pen <a href="https://codepen.io/mikelin2018/pen/KBwLBj/">KBwLBj</a> by Mike_Lin (<a href="https://codepen.io/mikelin2018">@mikelin2018</a>) on <a href="https://codepen.io">CodePen</a>.</p>
@@ -150,7 +148,6 @@ Change the CSS attribute "display" to block(show) or none(hide) if no speed spec
 Show and hide effect if speed specified.
 
 ```javascript
-//Syntax
 $("selector").show(speed, callback);
 $("selector").hide(speed, callback);
 ```
@@ -161,7 +158,6 @@ $("selector").hide(speed, callback);
 Change the CSS attribute "opacity" to 1(fadeIn) or 0(fadeOut) to create fading effect.
 
 ```javascript
-//Syntax
 $("selector").fadeIn(speed, callback);
 $("selector").fadeOut(speed, callback);
 $("selector").fadeToggle(speed, callback); //If current opacity is 1, then change it to 0; reverse-visa 
@@ -174,7 +170,6 @@ $("selector").fadeTo(speed, opacity, callback); //Change opacity programmer defi
 Change the CSS attributes "height","padding","margin" at the same time to create slide effect.
 
 ```javascript
-//Syntax
 $("selector").slideDown(speed, callback);
 $("selector").slideUp(speed, callback);
 $("selector").slideToggle(speed, callback); //If currently shown, then slideUp to hide; reverse-visa
