@@ -28,11 +28,15 @@ body {
     display: block;
     position: fixed;
     height: 100%;
-    background-color: #6d0f09;
+    // background-color: rgb(200, 16, 46);
+    background-color: #3069aa;
     color: white;
     h1,h2,h3,h4,a,a:visited{
       color:white;
       text-align: center;
+    }
+    #jQuery-logo{
+      width: 100%;
     }
 }
 
@@ -40,7 +44,7 @@ footer {
   height: 5em;
   width: 75%;
   float:right;
-  background-color: #6d0f09;
+  background-color: #3069aa;
   position: relative;
   top: 3em; }
 
