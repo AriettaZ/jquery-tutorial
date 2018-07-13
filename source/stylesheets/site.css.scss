@@ -31,19 +31,28 @@ body {
     // background-color: rgb(200, 16, 46);
     background-color: #3069aa;
     color: white;
-    h1,h2,h3,h4,a,a:visited{
+    h1,h2,h3,h4,a{
       color:white;
       text-align: center;
       text-decoration: none
     }
     p{
       margin:0px;
+      text-align: center;
     }
-    #jQuery-logo{
-      width: 100%;
+    .section{
+      font-size: 20px;
+      color:black;
     }
 }
-
+#logo{
+  width: 100%;
+  background: white;
+  #jQuery-logo{
+    width: 80%;
+    align-content: center;
+  }
+}
 footer {
   height: 5em;
   width: 75%;
