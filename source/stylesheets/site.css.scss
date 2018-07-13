@@ -45,7 +45,7 @@ h1,h2,h3,h4,h5{
   display: block;
   padding-top: 2px;
   background-color: #3069aa;
-  p:hover{
+  p:hover,p.active{
     background-color:#1e3d60;
     // cursor: pointer;
   }
