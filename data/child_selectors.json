@@ -37,7 +37,7 @@
   },
   {
     "selector": "$(\":nth-of-type(n)\")",
-    "description": "Selects all elements that are the nth child of a specific type of their parent, index starts with 1. The parameter can be index, even, odd, or an equation.",
+    "description": "Selects all elements that are the nth child of a specific type of their parent (index starts with 1). The parameter can be index, even, odd, or an equation.",
     "example": "$(\"p:nth-of-type(4)\")",
     "selects": "All &lt;p&gt; elements that are the 4th &lt;p&gt; element of their parent"
   },

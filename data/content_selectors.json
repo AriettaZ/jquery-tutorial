@@ -6,16 +6,16 @@
     "selects": "All &lt;p&gt; elements that contain \"hello\""
   },
   {
-    "selector": "$(\":empty\")",
-    "description": "Selects all elements that have no children (including text).",
-    "example": "$(\"td:empty\")",
-    "selects": "All empty &lt;td&gt; elements"
-  },
-  {
     "selector": "$(\":has(selector)\")",
     "description": "Selects elements which contain the element(s) that matches the specific selector.",
     "example": "$(\"div:has(p)\")",
     "selects": "All &lt;div&gt; elements that have &lt;p&gt; element(s) inside of them"
+  },
+  {
+    "selector": "$(\":empty\")",
+    "description": "Selects all elements that have no children (including text).",
+    "example": "$(\"td:empty\")",
+    "selects": "All empty &lt;td&gt; elements"
   },
   {
     "selector": "$(\":parent)\"",

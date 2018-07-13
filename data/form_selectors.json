@@ -61,15 +61,15 @@
   },
   {
     "selector": "$(\":selected\")",
-    "description": "Selects all elements that are selected.",
+    "description": "Selects all options of select elements that are selected.",
     "example": "$(\".class-name:selected\")",
-    "selects": "All elements with class \"class-name\" that are currently selected"
+    "selects": "All options of select elements with class \"class-name\" that are currently selected"
   },
   {
     "selector": "$(\":checked)",
-    "description": "Selects all elements that are checked or selected.",
+    "description": "Selects all checkboxes, radio buttons and options of select elements that are checked or selected.",
     "example": "$(\".class-name:checked\")",
-    "selects": "All elements with class \"class-name\" that are currently checked or selected"
+    "selects": "All checkboxes, radio buttons and options of select elements with class \"class-name\" that are currently checked or selected"
   },
   {
     "selector": "$(\":disabled)",

@@ -1,7 +1,7 @@
 [
   {
     "selector": "$(\"ancestor descendant\")",
-    "description": "Selects all elements that are descendants of a specific ancestor.",
+    "description": "Selects all descendant elements of a specific ancestor.",
     "example": "$(\"div p\")",
     "selects": "All &lt;p&gt; elements that are descendants of &lt;div&gt; elements"
   },

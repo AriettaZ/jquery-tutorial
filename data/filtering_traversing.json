@@ -2,7 +2,7 @@
   {
     "method": ".eq()",
     "syntax": "$(selector).eq(index)",
-    "description": "Gets the element with the specific index number of the selected elements.",
+    "description": "Gets the element with specific index among the selected elements.",
     "example": "$(\"li\").eq(1)",
     "returns": "The second &lt;li&gt; element in the document"
   },
@@ -22,7 +22,7 @@
   },
   {
     "method": ".filter()",
-    "syntax": "$(selector).filter(selector/function)",
+    "syntax": "$(selector).filter(selector/function(index))",
     "description": "Gets the elements that matches the selector or pass the function’s test.",
     "example": "$(\"p\").filter(\".test-class\")",
     "returns": "All &lt;p&gt; elements that have a class \"test-class\"."

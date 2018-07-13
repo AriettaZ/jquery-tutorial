@@ -23,29 +23,29 @@
   {
     "method": ".next()",
     "syntax": "$(selector).next([selector])",
-    "description": "Gets the immediately following sibling of the selected element, optionally filtered by a selector.",
-    "example": "$(\"h2\").next()",
-    "returns": "The immediately following siblings of the &lt;h2&gt; elements"
+    "description": "Gets the immediately following sibling of the selected element, optionally filtered by a selector. If the selector is provided, it will get the immediately following sibling only if it matches the selector.",
+    "example": "$(\"h2\").next(\"p\")",
+    "returns": "The immediately following sibling of the &lt;h2&gt; elements if it is a &lt;p&gt; element"
   },
   {
     "method": ".nextAll()",
     "syntax": "$(selector).nextAll([selector])",
     "description": "Gets all following sibling of the selected element, optionally filtered by a selector.",
-    "example": "$(\"h2\").pnextAll()",
-    "returns": "All following siblings of the &lt;h2&gt; elements"
+    "example": "$(\"h2\").nextAll(\"p\")",
+    "returns": "All following siblings of the &lt;h2&gt; elements that are &lt;p&gt; elements"
   },
   {
     "method": ".nextUntil()",
     "syntax": "$(selector).nextUntil([selector][, filter])",
     "description": "Gets all following siblings of the selected element up to but not including the element that matches the optional selector, optionally filtered by a filter.",
-    "example": "$(\"h2\").nextUntil(\"ul\")",
-    "returns": "All following siblings between &lt;h2&gt; and &lt;ul&gt; elements (exclusive)."
+    "example": "$(\"h2\").nextUntil(\"p\")",
+    "returns": "All following siblings between &lt;h2&gt; and &lt;p&gt; elements (exclusive)."
   },
   {
     "method": ".siblings()",
     "syntax": "$(selector).siblings([selector])",
     "description": "Gets all the siblings of the selected element, optionally filtered by a selector.",
-    "example": "$(\"p\").siblings()",
-    "returns": "All siblings of the &lt;p&gt; elements"
+    "example": "$(\"h3\").siblings()",
+    "returns": "All siblings of the &lt;h3&gt; elements"
   }
 ]
