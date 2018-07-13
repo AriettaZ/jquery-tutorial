@@ -4,7 +4,6 @@ title: jQuery Manipulation
 <!-- Created by Channing Jacobs -->
 
 # jQuery Manipulation
-## Introduction
 jQuery provides methods to access, update, add, and remove DOM elements and attributes on a web page. Recall, a set of one or more objects may be selected by direct selection: “$(selector)” or through traversal: “$(selector).jQuery\_traversal\_method()”.
 
 jQuery manipulation methods can be split into two categories. The first is HTML manipulation. These methods interact with elements and their content. The second is CSS manipulation. These methods interact with the style attribute of elements.
@@ -17,7 +16,7 @@ Once you have selected a set of one or more objects, you may interact with their
 
 There are four methods to access and update web page content. The .text() method is used to get or replace text. The .html() method gets or replaces html. The .val() method gets or replaces form text data. Finally, the .attr() method gets or replaces elements’ attributes. Each method and its use cases is listed below.
 
-#### .text()
+#### Text
 ```javascript
     .text()
     .text(new_text)
@@ -33,7 +32,7 @@ There are four methods to access and update web page content. The .text() method
   <p data-height="265" data-theme-id="0" data-slug-hash="BPNbzM" data-default-tab="html,result" data-user="channingjacobs" data-embed-version="2" data-pen-title="BPNbzM" class="codepen">See the Pen <a href="https://codepen.io/channingjacobs/pen/BPNbzM/">BPNbzM</a> by ChanningJacobs (<a href="https://codepen.io/channingjacobs">@channingjacobs</a>) on <a href="https://codepen.io">CodePen</a>.</p>
   <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-#### .html()
+#### HTML
 ```javascript
     .html()
     .html(new_html)
@@ -49,7 +48,7 @@ There are four methods to access and update web page content. The .text() method
 <p data-height="265" data-theme-id="0" data-slug-hash="pZJBad" data-default-tab="html,result" data-user="channingjacobs" data-embed-version="2" data-pen-title=".html()" class="codepen">See the Pen <a href="https://codepen.io/channingjacobs/pen/pZJBad/">.html()</a> by ChanningJacobs (<a href="https://codepen.io/channingjacobs">@channingjacobs</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-#### .val()
+#### Values
 ```javascript
     .val()
     .val(new_value)
@@ -65,7 +64,7 @@ There are four methods to access and update web page content. The .text() method
 <p data-height="265" data-theme-id="0" data-slug-hash="oMXVNe" data-default-tab="html,result" data-user="channingjacobs" data-embed-version="2" data-pen-title="oMXVNe" class="codepen">See the Pen <a href="https://codepen.io/channingjacobs/pen/oMXVNe/">oMXVNe</a> by ChanningJacobs (<a href="https://codepen.io/channingjacobs">@channingjacobs</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-#### .attr()
+#### Attributes
 ```javascript
     .attr(attr_name)
     .attr(attr_name, new_value)
@@ -80,8 +79,15 @@ There are four methods to access and update web page content. The .text() method
 
 **Example:**
 
-### Adding:
+The previous methods were used to retrieve and update existing content. The following methods are used to add new content or to remove old content.
 
+### Adding:
+There are two common ways to add content to a web page. 
+
+
+```javascript
+
+```
 
 <a class="previous" href="./traversal.html"><span>   Previous</span></a>
 <a class="next" href="./Event-and-Animation.html"><span>Next  </span></a>
