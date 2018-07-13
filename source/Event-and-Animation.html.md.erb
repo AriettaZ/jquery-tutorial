@@ -80,6 +80,7 @@ Note: Add parenthesis to eventName is optional
 
 ### Generic Animation
 Create animation to move and change the selected elements.
+
 ```javascript
 $("selector").animate({parameters}, speed, callback);
 ```
@@ -90,7 +91,6 @@ Note:
 	<ol>
 		<li>{parameters} is a map of CSS for the element to move to.</li>
 		<li>[optional] "speed" is a speed of animation , can be written in text or in millisecond</li>
-
 	<table>
 	<thead>
 	<tr>
@@ -121,13 +121,13 @@ Note:
 	</tr>
 	</tbody>
 	</table>
-
 	<li>[optional] callback is a function to be called after the animation execute</li>
 	<li>If more than one animation is called at the same time, or an animation is called before the previous animation ends, an animation **queue will hold all of them and execute one by one**. So, all animations will eventually be executed.</li>
 </ol>
 
 <h3>Stop the execution of animation</h3>
 Stop an currently executing animation.
+
 ```javascript
 $("selector").stop(stopAll, goToEnd);
 ```
@@ -143,6 +143,7 @@ Note:
 ##### show and hide
 Change the CSS attribute "display" to block(show) or none(hide) if no speed specified.
 Show and hide effect if speed specified.
+
 ```javascript
 $("selector").show(speed, callback);
 $("selector").hide(speed, callback);
@@ -152,17 +153,21 @@ $("selector").hide(speed, callback);
 
 ##### Fade Effect
 Change the CSS attribute "opacity" to 1(fadeIn) or 0(fadeOut) to create fading effect.
+
 ```javascript
 $("selector").fadeIn(speed, callback);
 $("selector").fadeOut(speed, callback);
-$("selector").fadeToggle(speed, callback); //If current opacity is 1, then change it to 0; reverse-visa
-$("selector").fadeTo(speed, opacity, callback); //Change opacity programmer defined value
+//If current opacity is 1, then change it to 0; reverse-visa
+$("selector").fadeToggle(speed, callback);
+//Change opacity programmer defined value
+$("selector").fadeTo(speed, opacity, callback);
 ```
 <p data-height="493" data-theme-id="0" data-slug-hash="zLxQQo" data-default-tab="html,result" data-user="mikelin2018" data-embed-version="2" data-pen-title="zLxQQo" class="codepen">See the Pen <a href="https://codepen.io/mikelin2018/pen/zLxQQo/">zLxQQo</a> by Mike_Lin (<a href="https://codepen.io/mikelin2018">@mikelin2018</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 ##### Slide Effect
 Change the CSS attributes "height","padding","margin" at the same time to create slide effect.
+
 ```javascript
 $("selector").slideDown(speed, callback);
 $("selector").slideUp(speed, callback);

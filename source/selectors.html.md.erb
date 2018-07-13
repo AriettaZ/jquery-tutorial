@@ -1,13 +1,18 @@
 ---
 title: jQuery Selector
 ---
+<!-- Author: Gail Chen
+Created: 7/11
+Edit: N/A
+Description: jQuery Selector Tutorial -->
+
 <h1>jQuery Selectors</h1>
-  - JQuery selectors allow you to select one or more HTML elements based on the tag names, ids, classes, attributes, etc. After selecting an element, you can manipulate it.
+  - JQuery selectors allow you to select one or more HTML elements based on elements' tag names, ids, classes, attributes, etc. After selecting an element, you can [manipulate](/manipulation.html) it.
   - All selectors start with the dollar sign and parentheses: $().
 
 <h2 id="basic">Basic Selectors</h2>
   - The element Selector
-    - Selects all elements based on the elements tag name.
+    - Selects elements based on their tag names.
     - Syntax: write the element's tag name.
 
         ```javascript
@@ -25,7 +30,7 @@ title: jQuery Selector
     - Example: $("p#test-id") selects the \<p\> element that has an id "test-id".
 
   - The .class Selector
-    - Selects all elements with a specific class.
+    - Selects all elements that have a specific class.
     - Syntax: write a period character (.) followed by the name of the class.
 
         ```javascript
@@ -59,7 +64,7 @@ title: jQuery Selector
     - Example: $("[type='text']") selects elements that have a type attribute with value "text".
 
   - The Attribute Starts With Selector [attribute^=value]
-    - Selects elements that have the specific attribute with a value starting with the specific value.
+    - Selects all elements that have the specific attribute with a value starting with the specific value.
     - Syntax: write the attribute and its value inside of the square brackets([ ]) connecting by the caret(^) and the equal sign(=).
 
         ```javascript
@@ -73,7 +78,7 @@ title: jQuery Selector
 
 
 <h2 id="child">Child Selectors</h2>
-  - Child selectors help select child elements of parent elements easily.
+  - Child selectors help select child elements easily.
   - :first-child
     - Selects all elements that are the first child of their parent.
     - Syntax:

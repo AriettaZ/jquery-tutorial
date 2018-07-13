@@ -81,9 +81,17 @@ h1,h2,h3,h4{
 }
 
 // Set the font family for the texts in table
-table{
+table {
   font-family: 'Roboto Condensed', sans-serif;
+  border-collapse: collapse; 
 }
+
+th, td{
+  text-align: center;
+  border: 1px solid black;
+  padding: 5px;
+}
+
 /* e.g. replace this selector */
 .codehilite .hll { background-color: #ffffcc }
 /* with this one */
