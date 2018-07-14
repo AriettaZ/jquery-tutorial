@@ -2,51 +2,54 @@
 title: jQuery Overview
 ---
 <h1 id="intro">Overview & Introduction</h1>
-jQuery is a feature-rich library written in Javascript which makes JavaScript development faster and easier.
+jQuery is a feature-rich library written in Javascript which makes JavaScript development faster and easier. jQuery has no assumptions about web technology stack and works well with other javascript frameworks like Angular, Backbone, Ember and more.
+
+jQuery was originally released in January 2006 by John Resig. As of June 2018, jQuery is used on 73% of the top 1 million websites, and by 22.4% of all websites according to [BuiltWith](https://trends.builtwith.com/javascript/jQuery).
 
 ## Embed jQuery library in your code
 
-  1. Download the jQuery library from [jQuery.com](http://jquery.com/download/).
-      - To download the production version which has been minified and compressed for your live website:
-      [Download the compressed, production jQuery 3.3.1](https://code.jquery.com/jquery-3.3.1.min.js)
-      - To download the development version which is uncompressed and readable code for your website under testing and development:
-      [Download the uncompressed, development jQuery 3.3.1](https://code.jquery.com/jquery-3.3.1.js)
+###  Method 1
+Download the jQuery library from [jQuery.com](http://jquery.com/download/) if you want to customize the source code or run your application offline. 
 
-      *Tip: Run `curl href > your/file/location.name `  on terminal.*
-      *For example, to download the development version to current folder:*
+- To download the production version which has been minified and compressed for your live website:
+[Download the compressed, production jQuery 3.3.1](https://code.jquery.com/jquery-3.3.1.min.js)
 
-      ```
-        curl https://code.jquery.com/jquery-3.3.1.min.js > ./jquery-3.3.1.min.js
-      ```
+- To download the development version which is uncompressed and readable code for your website under testing and development:
+[Download the uncompressed, development jQuery 3.3.1](https://code.jquery.com/jquery-3.3.1.js)
 
-      After downloading, include jQuery library in html file
+*Tip: Run `curl href > your/file/location.name `  on terminal.*
+*For example, to download the development version to current folder:*
 
-      ```html
-        <head>
-        <script src="jquery-3.3.1.min.js"></script>
-        </head>
-      ```
+```
+curl https://code.jquery.com/jquery-3.3.1.min.js > ./jquery-3.3.1.min.js
+```
 
-  2. Include jQuery CDN in html file. CDN is a [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) which provides media files with very low latency to web broswers.
-  The browser will cache the file for reuse which means that different sites using the same Javascript Library can share a large performace improvement. For libraries like jQuery used by large amount of websites, browser will reuse cached library files instead download the same file again for each site.
+After downloading, include jQuery library in html file
 
-    ```html
-      <!-- Google CDN: -->
-      <head>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-      </head>
-      <!-- or use Microsoft CDN: -->
-      <head>
-        <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
-      </head>
-    ```
+```html
+<head>
+<script src="jquery-3.3.1.min.js"></script>
+</head>
+```
+
+### Method2
+Include jQuery CDN in html file is the fastest way. CDN is a [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) which provides media files with very low latency to web broswers.
+The browser will cache the file for reuse. For libraries like jQuery used by large amount of websites, browser will reuse cached library files instead download the same file again for each site.
+
+  ```html
+    <!-- Google CDN: -->
+    <head>
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    </head>
+    <!-- or use Microsoft CDN: -->
+    <head>
+      <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.3.1.min.js"></script>
+    </head>
+  ```
 
 ## Prerequisites
-  You need basic knowledge of
-
-  - CSS
-  - HTML
-  - Javascript
+  You need basic knowledge of CSS, HTML and Javascript. Although jQuery is succinct and easy to use, it has no real structure and developers have full freedom. The lack of understanding of basic CSS, HTML and Javascript will lead to
+  "spaghetti code".
 
 <h2 id="reason">Reasons to use jQuery</h2>
   The advantages of using javascript libraries and frameworks include:
@@ -59,6 +62,57 @@ jQuery is a feature-rich library written in Javascript which makes JavaScript de
       //For IE5-8 browsers
       e.attachEvent()
     ```
+
+     jQuery did a lot of work to solve browser incompatibilities and gotchas developers can come across.
+
+      ```javascript
+        //jQuery Source Code of $(document).ready(function () {//do work});
+        function bindReady(){
+          if ( readyBound ) return;
+          readyBound = true;
+
+          // Mozilla, Opera and webkit nightlies currently support this event
+          if ( document.addEventListener ) {
+              // Use the handy event callback
+              document.addEventListener( "DOMContentLoaded", function(){
+                  document.removeEventListener( "DOMContentLoaded", arguments.callee, false );
+                  jQuery.ready();
+              }, false );
+
+          // If IE event model is used
+          } else if ( document.attachEvent ) {
+              // ensure firing before onload,
+              // maybe late but safe also for iframes
+              document.attachEvent("onreadystatechange", function(){
+                  if ( document.readyState === "complete" ) {
+                      document.detachEvent( "onreadystatechange", arguments.callee );
+                      jQuery.ready();
+                  }
+              });
+
+              // If IE and not an iframe
+              // continually check to see if the document is ready
+              if ( document.documentElement.doScroll && window == window.top ) (function(){
+                  if ( jQuery.isReady ) return;
+
+                  try {
+                      // If IE is used, use the trick by Diego Perini
+                      // http://javascript.nwbox.com/IEContentLoaded/
+                      document.documentElement.doScroll("left");
+                  } catch( error ) {
+                      setTimeout( arguments.callee, 0 );
+                      return;
+                  }
+
+                  // and execute any waiting functions
+                  jQuery.ready();
+              })();
+          }
+
+          // A fallback to window.onload, that will always work
+          jQuery.event.add( window, "load", jQuery.ready );
+        }
+      ```
   - jQuery provides easier syntax to navigate a document, select DOM elements, create animations, handle events, and develop Ajax applications.
 
     ```javascript
@@ -90,58 +144,6 @@ jQuery is a feature-rich library written in Javascript which makes JavaScript de
           //do work after writing a long function to test whether document is ready
       });
 
-    ```
-
-  - jQuery did a lot of work to solve browser incompatibilities and gotchas developers can come across and make their lives easier.
-    Its source code is a good learning resource for javascript developers.
-
-    ```javascript
-      //jQuery Source Code of $(document).ready(function () {//do work});
-      function bindReady(){
-        if ( readyBound ) return;
-        readyBound = true;
-
-        // Mozilla, Opera and webkit nightlies currently support this event
-        if ( document.addEventListener ) {
-            // Use the handy event callback
-            document.addEventListener( "DOMContentLoaded", function(){
-                document.removeEventListener( "DOMContentLoaded", arguments.callee, false );
-                jQuery.ready();
-            }, false );
-
-        // If IE event model is used
-        } else if ( document.attachEvent ) {
-            // ensure firing before onload,
-            // maybe late but safe also for iframes
-            document.attachEvent("onreadystatechange", function(){
-                if ( document.readyState === "complete" ) {
-                    document.detachEvent( "onreadystatechange", arguments.callee );
-                    jQuery.ready();
-                }
-            });
-
-            // If IE and not an iframe
-            // continually check to see if the document is ready
-            if ( document.documentElement.doScroll && window == window.top ) (function(){
-                if ( jQuery.isReady ) return;
-
-                try {
-                    // If IE is used, use the trick by Diego Perini
-                    // http://javascript.nwbox.com/IEContentLoaded/
-                    document.documentElement.doScroll("left");
-                } catch( error ) {
-                    setTimeout( arguments.callee, 0 );
-                    return;
-                }
-
-                // and execute any waiting functions
-                jQuery.ready();
-            })();
-        }
-
-        // A fallback to window.onload, that will always work
-        jQuery.event.add( window, "load", jQuery.ready );
-      }
     ```
 
     <a class="next" href="./selectors.html"><span>Next  </span></a>
