@@ -97,8 +97,8 @@ Selects all elements that have specific attribute.
 Example:
 
 ```javascript
-  //Selects all elements that have a href attribute.
-  $("[href]")
+  //Selects all elements that have a type attribute.
+  $("[type]")
 ```
 
 ### The Attribute Equals Selector [attribute=value]
@@ -108,7 +108,7 @@ Selects all elements that have specific attribute with specific value.
 Example:
 
 ```javascript
-  //Selects elements that have a type attribute with value "text".
+  //Selects all elements that have a type attribute with value "text".
   $("[type='text']")
 ```
 
@@ -123,7 +123,7 @@ Example:
   $("[title^='Hi']")
 ```
 
-<p data-height="350" data-theme-id="0" data-slug-hash="JBogeP" data-default-tab="js,result" data-user="ctz33" data-embed-version="2" data-pen-title="jQuery Attribute Selectors" class="codepen">See the Pen <a href="https://codepen.io/ctz33/pen/JBogeP/">jQuery  Attribute Selectors</a> by ctz33 (<a href="https://codepen.io/ctz33">@ctz33</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="0" data-slug-hash="JBogeP" data-default-tab="js,result" data-user="ctz33" data-embed-version="2" data-pen-title="jQuery Attribute Selectors" class="codepen">See the Pen <a href="https://codepen.io/ctz33/pen/JBogeP/">jQuery  Attribute Selectors</a> by ctz33 (<a href="https://codepen.io/ctz33">@ctz33</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 
@@ -267,13 +267,12 @@ Selects elements that are currently focused.
 Example:
 
 ```javascript
-  //Selects the element with class "class-name" that are currently focused.
-  $(".class-name:focus")
+  //Selects the <input> element that is currently focused.
+  $("input:focus")
 ```
 
-<p data-height="300" data-theme-id="0" data-slug-hash="MBwWey" data-default-tab="html,result" data-user="ctz33" data-embed-version="2" data-pen-title="jQuery  Form Selectors" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/ctz33/pen/MBwWey/">jQuery  Form Selectors</a> by ctz33 (<a href="https://codepen.io/ctz33">@ctz33</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="300" data-theme-id="0" data-slug-hash="MBwWey" data-default-tab="js,result" data-user="ctz33" data-embed-version="2" data-pen-title="jQuery  Form Selectors" data-preview="true" class="codepen">See the Pen <a href="https://codepen.io/ctz33/pen/MBwWey/">jQuery  Form Selectors</a> by ctz33 (<a href="https://codepen.io/ctz33">@ctz33</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
-
 
 <h2 id="hierarchy">Hierarchy Selectors</h2>
 Hierarchy selectors help select elements based on the hierarchy in the DOM tree.
@@ -299,8 +298,8 @@ Selects all direct child elements specified by "child" of elements specified by 
 Example:
 
 ```javascript
-  //Selects all <p> elements that are children of <div> elements
-  $("div > p")
+  //Selects all <button> elements that are children of <div> elements
+  $("div > button")
 ```
 
 ### Next adjacent selector ("prev + next")
@@ -310,8 +309,8 @@ Selects all first "next" elements that follow right after the "prev" element.
 Example:
 
 ```javascript
-  //Selects all <h2> elements that are right after each <p> element
-  $("p + h2")
+  //Selects all <button> elements that are the immediately following siblings of each <p> element
+  $("p + button")
 ```
 
 ### Next Siblings selector ("prev ~ siblings")
@@ -321,11 +320,11 @@ Selects all "siblings" elements that follow after the "prev" element
 Example:
 
 ```javascript
-  //Selects all <h3> elements that are the following siblings of <p> elements
-  $("p ~ h3")
+  //Selects all <p> elements that are the following siblings of <button> elements
+  $("button ~ p")
 ```
 
-<p data-height="470" data-theme-id="0" data-slug-hash="oMXgLR" data-default-tab="js,result" data-user="ctz33" data-embed-version="2" data-pen-title="jQuery  Hierarchy" class="codepen">See the Pen <a href="https://codepen.io/ctz33/pen/oMXgLR/">jQuery  Hierarchy</a> by ctz33 (<a href="https://codepen.io/ctz33">@ctz33</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="350" data-theme-id="0" data-slug-hash="oMXgLR" data-default-tab="js,result" data-user="ctz33" data-embed-version="2" data-pen-title="jQuery  Hierarchy" class="codepen">See the Pen <a href="https://codepen.io/ctz33/pen/oMXgLR/">jQuery  Hierarchy</a> by ctz33 (<a href="https://codepen.io/ctz33">@ctz33</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 

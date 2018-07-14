@@ -2,8 +2,8 @@
   {
     "selector": "$(\"[attribute]\")",
     "description": "Selects all elements that have the specific attribute.",
-    "example": "$(\"[href]\")",
-    "selects": "All elements that have a href attribute"
+    "example": "$(\"[type]\")",
+    "selects": "All elements that have a type attribute"
   },
   {
     "selector": "$(\"[attribute=value]\")",
@@ -44,13 +44,13 @@
   {
     "selector": "$(\"[attribute~=value]\")",
     "description": "Selects elements that have the specific attribute with a value containing the specific value as a word.",
-    "example": "$(\"[title]='my'\")",
+    "example": "$(\"[title~='my']\")",
     "selects": "All elements that have a title attribute whose value contains the word \"my\""
   },
   {
     "selector": "$(\"[attribute1=value1][attribute2=value2][attributeN=valueN]\")",
     "description": "Selects all elements that have all of the specific attributes with the specific values",
-    "example": "$([type=\"text\"][placeholder=0])",
+    "example": "$(\"[type=\"text\"][placeholder=0]\")",
     "selects": "All elements that have a type attribute with value \"text\" and a placeholder attribute with value 0"
   }
 ]

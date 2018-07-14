@@ -95,8 +95,8 @@ Gets all children of the selected element, optionally filtered by a selector.
 Example:
 
 ```javascript
-  //Returns all child elements of all <div> elements.
-  $("div").children()
+  //Returns all child elements of all <p> elements.
+  $("p").children()
 ```
 
 ### .find(selector)
@@ -227,7 +227,7 @@ Example:
   $("p").not(".test-class")
 ```
 
-<p data-height="350" data-theme-id="0" data-slug-hash="NBqgXW" data-default-tab="js,result" data-user="ctz33" data-embed-version="2" data-pen-title="jQuery Traversing Filtering" class="codepen">See the Pen <a href="https://codepen.io/ctz33/pen/NBqgXW/">jQuery Traversing Filtering</a> by ctz33 (<a href="https://codepen.io/ctz33">@ctz33</a>) on <a href="https://codepen.io">CodePen</a>.</p>
+<p data-height="400" data-theme-id="0" data-slug-hash="NBqgXW" data-default-tab="js,result" data-user="ctz33" data-embed-version="2" data-pen-title="jQuery Traversing Filtering" class="codepen">See the Pen <a href="https://codepen.io/ctz33/pen/NBqgXW/">jQuery Traversing Filtering</a> by ctz33 (<a href="https://codepen.io/ctz33">@ctz33</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
 
@@ -245,14 +245,14 @@ Example:
   //Executes the function that adds " executes function" to the end of the text
   //for each <p> element that has a class "class-name".
   $("p.class-name").each(function(){
-    this.innerHTML += " executes function"
+    this.innerHTML += " executes function";
   });
 ```
 
 ### .map(callback)
 Passes each element in the selected elements through a callback function,
 creating a new jQuery object containing the return values. The returned jQuery
-object contains an array and you can use the get method to work with a array.
+object contains an array and you can use the ```get()``` method to work with a array.
 
 Example:
 
