@@ -10,6 +10,7 @@
 ### Overview
 The MAGiC team was tasked with creating a tutorial on jQuery. The team created a website to display the tutorial. The tutorial focused primarily on developing user knowledge, understanding, and analysis. This was done with concise descriptions and CodePen examples. The team also provided comparisons to JavaScript to allow the reader to evaluate the differences in syntax.
 
+To view the website. Open the **index.html** file in **MAG-C-Tech-Tasks-1-2/build**.
 ***
 
 ### Team
