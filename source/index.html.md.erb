@@ -2,19 +2,19 @@
 title: jQuery Overview
 ---
 <h1 id="intro">Overview & Introduction</h1>
-jQuery is a feature-rich library written in Javascript which makes JavaScript development faster and easier. jQuery has no assumptions about web technology stack and works well with other javascript frameworks like Angular, Backbone, Ember and more.
+jQuery is a feature-rich library written in Javascript which makes JavaScript development faster and easier. jQuery has no assumptions about the web technology stack and works well with other javascript frameworks like Angular, Backbone, and Ember.
 
 jQuery was originally released in January 2006 by John Resig. As of June 2018, jQuery is used on 73% of the top 1 million websites, and by 22.4% of all websites according to [BuiltWith](https://trends.builtwith.com/javascript/jQuery).
 
 ## Embed jQuery library in your code
 
 ###  Method 1
-Download the jQuery library from [jQuery.com](http://jquery.com/download/) if you want to customize the source code or run your application offline. 
+Download the jQuery library from [jQuery.com](http://jquery.com/download/) if you want to customize the source code or run your application offline.
 
-- To download the production version which has been minified and compressed for your live website:
+- To download the production version,which has been minified and compressed, for your live website:
 [Download the compressed, production jQuery 3.3.1](https://code.jquery.com/jquery-3.3.1.min.js)
 
-- To download the development version which is uncompressed and readable code for your website under testing and development:
+- To download the development version, which is uncompressed and readable code, for your website under testing and development:
 [Download the uncompressed, development jQuery 3.3.1](https://code.jquery.com/jquery-3.3.1.js)
 
 *Tip: Run `curl href > your/file/location.name `  on terminal.*
@@ -24,7 +24,7 @@ Download the jQuery library from [jQuery.com](http://jquery.com/download/) if yo
 curl https://code.jquery.com/jquery-3.3.1.min.js > ./jquery-3.3.1.min.js
 ```
 
-After downloading, include jQuery library in html file
+After downloading, include the jQuery library in an html file:
 
 ```html
 <head>
@@ -33,8 +33,8 @@ After downloading, include jQuery library in html file
 ```
 
 ### Method2
-Include jQuery CDN in html file is the fastest way. CDN is a [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network) which provides media files with very low latency to web broswers.
-The browser will cache the file for reuse. For libraries like jQuery used by large amount of websites, browser will reuse cached library files instead download the same file again for each site.
+The fastest way to include jQuery in an html file is by using a CDN. CDN stands for [Content Delivery Network](https://en.wikipedia.org/wiki/Content_delivery_network); which provides media files with very low latency to web broswers.
+The browser will cache the file for reuse. For popular web libraries like jQuery, the browser will often reuse cached library files instead of downloading the same file again for each site.
 
   ```html
     <!-- Google CDN: -->
@@ -48,7 +48,7 @@ The browser will cache the file for reuse. For libraries like jQuery used by lar
   ```
 
 ## Prerequisites
-  You need basic knowledge of CSS, HTML and Javascript. Although jQuery is succinct and easy to use, it has no real structure and developers have full freedom. The lack of understanding of basic CSS, HTML and Javascript will lead to
+  You need basic knowledge of CSS, HTML and Javascript. Although jQuery is succinct and easy to use, it has no real structure and developers have full freedom. The lack of understanding basic CSS, HTML and Javascript will lead to
   "spaghetti code".
 
 <h2 id="reason">Reasons to use jQuery</h2>
@@ -63,7 +63,7 @@ The browser will cache the file for reuse. For libraries like jQuery used by lar
       e.attachEvent()
     ```
 
-     jQuery did a lot of work to solve browser incompatibilities and gotchas developers can come across.
+     jQuery did a lot of work to solve browser incompatibilities and gotchas developers often come across.
 
       ```javascript
         //jQuery Source Code of $(document).ready(function () {//do work});

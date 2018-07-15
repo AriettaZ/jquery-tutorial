@@ -1,16 +1,18 @@
 ---
 title: jQuery Plugins
 ---
+<!-- Created by Ariel, minor edits by Channing -->
+
 # Plugins
 jQuery also provides capabilities for developers to create plug-ins on top of the JavaScript library. This adds on the flexibility and functionality of jQuery library. You can find a list of popular plugins from [https://plugins.jquery.com/](https://plugins.jquery.com/).
 
 ## Use jQuery Plugins in your projects
-Let's take [DataTables](https://datatables.net/) plugin as an example. DataTables will help you build an ultimate table with minimum effort.
+Let's use the [DataTables](https://datatables.net/) plugin as an example. DataTables will help you build a polished table with minimal effort.
 
 The table functions DataTables supports include: sorting, filtering, translation, styling, ajax loading and more.
 
 #### Step 1: Include jQuery and DataTables libraries.
-Add jQuery before jQuery plugin libraies to make sure jQuery will load first. Most of jQuery plugin libraies require jQuery to execute. DataTables has both table functionality and style features, so both css and javascript files are needed.
+Add jQuery before jQuery plugin libraries to make sure jQuery will load first. Most of jQuery plugin libraies require jQuery to execute. DataTables has both table functionality and style features, so both css and javascript files are needed.
 
 ```html
 <head>
@@ -27,8 +29,8 @@ Add jQuery before jQuery plugin libraies to make sure jQuery will load first. Mo
  <p data-height="265" data-theme-id="0" data-slug-hash="BPNZKb" data-default-tab="html,result" data-user="Arietta" data-embed-version="2" data-pen-title="Original Table" class="codepen">See the Pen <a href="https://codepen.io/Arietta/pen/BPNZKb/">Original Table</a> by Ariel Zhu (<a href="https://codepen.io/Arietta">@Arietta</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-#### Step 3: Select the table by id and add DataTable style by adding ```$('#tableid').DataTable()``` to javascript file
-Make sure to add DataTable plugin after table is loaded because DataTables need data to generate table and trigger features. If your table is not empty but indicates "Showing 0 to 0 of 0 entries", you may want to use ```$(document).ready``` or ```setTimeout``` or callback functions to load table first.
+#### Step 3: Select the table by id and add the DataTable style by adding ```$('#tableid').DataTable()``` to javascript file
+Make sure to add the DataTable plugin after table is loaded because DataTables need data to generate table and trigger features. If your table is not empty but indicates "Showing 0 to 0 of 0 entries", you may want to use ```$(document).ready``` or ```setTimeout``` or callback functions to load table first.
 
  <p data-height="265" data-theme-id="0" data-slug-hash="XBbgzR" data-default-tab="js,result" data-user="Arietta" data-embed-version="2" data-pen-title="dataTable" class="codepen">See the Pen <a href="https://codepen.io/Arietta/pen/XBbgzR/">dataTable</a> by Ariel Zhu (<a href="https://codepen.io/Arietta">@Arietta</a>) on <a href="https://codepen.io">CodePen</a>.</p>
  <script async src="https://static.codepen.io/assets/embed/ei.js"></script>

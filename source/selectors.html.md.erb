@@ -4,15 +4,16 @@ title: jQuery Selectors
 <!-- Author: Gail Chen
 Created: 7/11
 Edit: 7/12 Gail added more paragraphs.
+Edit: 7/14 Channing, final revisions
 Description: jQuery Selector Tutorial -->
 
 <h1>jQuery Selectors</h1>
 Whenever you want to <a href="./manipulation.html">manipulate</a> the contents
-of the elements, <a href="./Event-and-Animation.html">add an events and animation</a>
+of elements, or <a href="./Event-and-Animation.html">add events and animation</a>
 to elements, you need to select the elements first. Most jQuery selectors are
-similar to CSS selectors but jQuery also has its own custom selectors.
+similar to CSS selectors, but jQuery also has its own custom selectors.
 
-Compared to Javascript, jQuery selectors simplify the code to select one or more
+Compared to Javascript, jQuery selectors simplify the code by allowing you to select one or more
 elements based on their tags, ids, classes, indices, attributes, contents, etc.
 For example, to select an element with id "tutorial", ```document.getElementById("tutorial")```
 is used in Javascript, whereas ```$("#tutorial")``` is used in jQuery.
@@ -23,9 +24,9 @@ indicates the following is a jQuery function.
 
 <h2 id="basic">Basic Selectors</h2>
 Basic selectors allow you to select elements based on their tag names, ids, classs, index, etc.
-These selectors use zero-based indexing which means the index starts with 0.
+These selectors use zero-based indexing which means the index starts at 0.
 If you want to select a group of elements that fulfill different selectors,
-you can use $("selector 1, selector 2, selector N") to get combined result of multiple selectors.
+you can use $("selector 1, selector 2, ... , selector N") to get combined result of multiple selectors.
 
 For a complete reference of all the jQuery basic selectors, please visit
 <a href="./selector_reference.html#basic">jQuery Selectors Reference</a>.
@@ -82,10 +83,10 @@ Example:
 <h2 id="attribute">Attribute Selectors</h2>
 Attribute selectors help select elements based on the existence and the value of
 their attributes. The common syntax for using the attribute selectors is to write
-the attribute name and its value inside of the square brackets([ ]), connect
-the attribute name and its value by the equal sign(=). The attribute selectors
-requiring a sign(|, ^, $, *, ~) before the equal sign select the elements with
-a specific attribute whose value contain the given value at different positions.
+the attribute name and its value inside of the square brackets([ ]), connecting
+the attribute name and its value by the equals sign(=). The attribute selectors
+that provide a sign(|, ^, $, *, ~) before the equal sign, select the elements with
+attibutes that fix a regular expression.
 
 For a complete reference of all the jQuery attribute selectors, please visit
 <a href="./selector_reference.html#attribute">jQuery Selectors Reference</a>.
@@ -129,7 +130,7 @@ Example:
 
 <h2 id="child">Child Selectors</h2>
 Child selectors help select the children of an element based on their index or type.
-These selectors use one-based indexing which means the index starts with 1.
+These selectors use one-based indexing which means the index starts at 1.
 
 For a complete reference of all the jQuery child selectors, please visit
 <a href="./selector_reference.html#child">jQuery Selectors Reference</a>.
@@ -230,7 +231,7 @@ selected, disabled, enabled, focus). They shorten the code to select form elemen
 For example, instead of using $("button, input[type='button']"), you can use
 $(":button") to select all button elements and elements of type button. The
 $(":enabled") and $("disabled") selectors can only be used on elements that support
-disabled attribute which include \<button\>, \<fieldset\>, \<input\>, \<select\>,
+disabled attribute; which includes \<button\>, \<fieldset\>, \<input\>, \<select\>,
 \<optgroup\>, \<option\>, \<textare\>.
 
 For a complete reference of all the jQuery form selectors, please visit

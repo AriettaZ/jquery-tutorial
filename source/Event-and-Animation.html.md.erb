@@ -4,11 +4,12 @@ title: jQuery Event and Animation
 <!-- Author: Mike
 Created: 7/10
 Edit: 7/13 Mike Add explanation and add/change examples
+Edit: 7/14 Channing, final revision.
 Description: jQuery Event and Animation Tutorial -->
 <span id="event"></span>
 # Event
 ## Define Event
-Event is **user's action** on a web page, which trigger interactive responses. For example, user click on a button is a 'click' event.
+An event is a **user's action** on a web page, which triggers interactive responses. For example, a user clicking on a button is a 'click' event.
 ## Event Type
 <table>
 <thead>
@@ -50,9 +51,9 @@ Event is **user's action** on a web page, which trigger interactive responses. F
 
 <span id="register"></span>
 ## Register Event Listener (Create response to events)
-When a event is triggered, a event object is created and sent to the listener. This event object contains all the information related to an event, for example, `eventObj.target` is the JavaScript DOM object that the user triggers event on. Please visit [JavaScript event tutorial](https://www.w3schools.com/js/js_events.asp) for more information on event object.
+When an event is triggered, an event object is created and sent to the listener. This event object contains all the information related to an event, for example, `eventObj.target` is the JavaScript DOM object that the user triggers the event on. Please visit [JavaScript event tutorial](https://www.w3schools.com/js/js_events.asp) for more information on the event object.
 
-In jQuery, there are **three ways** to register event listener. When a listener is registered with an jQuery object `$("selector")`, the jQuery object will listen to user's particular action `.eventName()` and perform predefined action `function(event){...}`. The function parameter `event` is the event object.
+In jQuery, there are **three ways** to register an event listener. When a listener is registered with a jQuery object `$("selector")`, the jQuery object will listen to user's particular action `.eventName()` and perform a predefined action `function(event){...}`. The function parameter `event` is the event object.
 #### 1.Register single event listener:
 
 ```javascript
@@ -62,7 +63,7 @@ $("selector").eventName(function(event){...});
 <p data-height="411" data-theme-id="0" data-slug-hash="KBwEog" data-default-tab="html,result" data-user="mikelin2018" data-embed-version="2" data-pen-title="Register single event listener" class="codepen">See the Pen <a href="https://codepen.io/mikelin2018/pen/KBwEog/">Register single event listener</a> by Mike_Lin (<a href="https://codepen.io/mikelin2018">@mikelin2018</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
 
-Note: When two same event listener (e.g. click) is added to the same object, JavaScript `obj.onclick=function` will replace the first listener with the second. However, jQuery will add both listener and execute function according to their added orders. Please see the following example.
+Note: When two of the same event listeners (e.g. click) are added to the same object, JavaScript `obj.onclick=function` will replace the first listener with the second. However, jQuery will add both listeners and execute their functions according to their order of addition. Please see the following example.
 
 <p data-height="265" data-theme-id="0" data-slug-hash="JBYmPV" data-default-tab="html,result" data-user="mikelin2018" data-embed-version="2" data-pen-title="JBYmPV" class="codepen">See the Pen <a href="https://codepen.io/mikelin2018/pen/JBYmPV/">JBYmPV</a> by Mike_Lin (<a href="https://codepen.io/mikelin2018">@mikelin2018</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
@@ -85,7 +86,7 @@ eventName3: function(event){...}
 });
 ```
 
-Note: Add parenthesis to eventName is optional, but eventName without parenthesis is recommanded.
+Note: Adding parenthesis to eventName is optional, but eventName without parenthesis is recommended.
 
 <p data-height="325" data-theme-id="0" data-slug-hash="qyEGRN" data-default-tab="html,result" data-user="mikelin2018" data-embed-version="2" data-pen-title="Register multiple event listener" class="codepen">See the Pen <a href="https://codepen.io/mikelin2018/pen/qyEGRN/">Register multiple event listener</a> by Mike_Lin (<a href="https://codepen.io/mikelin2018">@mikelin2018</a>) on <a href="https://codepen.io">CodePen</a>.</p>
 <script async src="https://static.codepen.io/assets/embed/ei.js"></script>
@@ -96,7 +97,7 @@ Note: Add parenthesis to eventName is optional, but eventName without parenthesi
 
 <span id="animation"></span>
 ## Generic Animation
-Create animation to move and change the selected elements. The object will perform an animation to gradually change to the CSS in the {CSSparameters} list. 
+Create animations to move and change the selected elements. The object will perform an animation to gradually change to the CSS in the {CSSparameters} list.
 
 If more than one animation is called at the same time, or an animation is called before the previous animation ends, an animation queue will hold all the animations and execute them one by one. So, all animations will eventually be executed.
 
@@ -107,7 +108,7 @@ $("selector").animate({CSSparameters}, speed, callback);
 Note:
 	<ol>
 		<li>{parameters} is a map of CSS for the element to gradually change to.</li>
-		<li>[optional] "speed" is a speed of animation , can be written in text or in millisecond.</li>
+		<li>[optional] "speed" is the speed of animation , and can be written in text or in millisecond.</li>
 	<table>
 	<thead>
 	<tr>
@@ -145,10 +146,9 @@ Note:
 
 
 
-## Stop the execution of animation
-Stop an currently executing animation. 
+## Stopping the execution of an animation
 
-If an animation is stopped, callback function won't be executed. In case there is a animation queue, the current animation will be stopped and the following animation will be started.
+If an animation is stopped, the callback function won't be executed. If there is an animation queue, the current animation will be stopped and the following animation will be started.
 
 ```javascript
 $("selector").stop(stopAll, goToEnd);
@@ -166,7 +166,7 @@ Note:
 
 <span id="effect"></span>
 # Effect
-Effect can be consider a shortcut for the [generic animation](#animation) discussed above. Effect is a simple way to add animation to the jQuery objects. All following effects can also be created by [generic animation](#animation).
+Effect can be consider a shortcut for the [generic animation](#animation) discussed above. Effect is a simple way to add an animation to the jQuery objects. All of the following effects can also be created by [generic animation](#animation).
 
 ## show and hide effect
 

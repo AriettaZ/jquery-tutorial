@@ -4,6 +4,7 @@ title: jQuery Traversing
 <!-- Author: Gail Chen
 Created: 7/11
 Edit: 7/13 Gail added more paragraphs.
+Edit: 7/14 Channing, final revision.
 Description: jQuery Traversing Tutorial -->
 
 <h1>jQuery Traversing</h1>
@@ -18,7 +19,7 @@ specific elements from the selected elements, add more elements to your selectio
 and execute a function for every selected element with only one line of code.
 
 Since the traversal methods are used after selecting some elements, the syntax is
-$(selector).method([param]). Some traversal methods require parameters and some don't.
+$(selector).method([param]). Not all traversal methods require parameters.
 
 <h2 id="ancestors">Ancestors</h2>
 An ancestor of an element 'elt' is an element that is above the 'elt' element in the DOM tree. Ancestors include parent, grandparent, etc.
@@ -232,9 +233,8 @@ Example:
 
 
 <h2 id="iteration">Iteration</h2>
-Iteration methods iterate through every element in the selected elements.
-They are recommended to use if you want to do something with every element
-in the selected elements.
+Iteration methods iterate through every selected element.
+They are recommended to use if you want to update or display every selected element.
 
 ### .each(function)
 Executes a function for each element in the selected elements.
@@ -252,7 +252,7 @@ Example:
 ### .map(callback)
 Passes each element in the selected elements through a callback function,
 creating a new jQuery object containing the return values. The returned jQuery
-object contains an array and you can use the ```get()``` method to work with a array.
+object contains an array and you can use the ```get()``` method to work with an array.
 
 Example:
 
