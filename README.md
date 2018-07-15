@@ -10,7 +10,47 @@
 ### Overview
 The MAGiC team was tasked with creating a tutorial on jQuery. The team created a website to display the tutorial. The tutorial focused primarily on developing user knowledge, understanding, and analysis. This was done with concise descriptions and CodePen examples. The team also provided comparisons to JavaScript to allow the reader to evaluate the differences in syntax.
 
-To view the website. Open the **index.html** file in **MAG-C-Tech-Tasks-1-2/build**.
+## Instructions
+To view the website.
+
+1. Enter the following command in the terminal to check if Bundler is installed.
+
+```
+$ bundle -v
+```
+If Bundler was not installed. Run:
+
+```
+$ gem install bundler
+$ rbenv rehash # bookkeeping required by rbenv
+```
+
+2. Install gems using Bundler:
+
+```
+$ bundle install # installs gems and creates Gemfile.lock
+$ rbenv rehash # bookkeeping required by rbenv
+```
+
+3. Choose one of the following methods to run the application
+  With the build folder:
+   1. Create static files for each file located in your source folder.
+   ```
+  $ bundle exec middleman build
+  ```
+
+  2. Open the build folder inside the main project folder.
+
+  3. Open the index.html page in Firefox.
+
+With middleman server:
+  1. Start the preview web-server
+
+  ```
+   $ bundle exec middleman server
+   ```
+   2. Open localhost:4567 in Firefox.
+   
 ***
 
 ### Team
