@@ -33,25 +33,28 @@ $ rbenv rehash # bookkeeping required by rbenv
 ```
 
 3. Choose one of the following methods to run the application
-  With the build folder:
-   1. Create static files for each file located in your source folder.
+
+**With the build folder:**
+
+Create static files for each file located in your source folder.
 
   ```
   $ bundle exec middleman build
   ```
 
-  2. Open the build folder inside the main project folder.
+Open the build folder inside the main project folder.
 
-  3. Open the index.html page in Firefox.
+Open the index.html page in Firefox.
 
-With middleman server:
-  1. Start the preview web-server
+**With middleman server:**
+
+Start the preview web-server
 
   ```
    $ bundle exec middleman server
    ```
-   
-   2. Open localhost:4567 in Firefox.
+
+Open localhost:4567 in Firefox.
 
 ***
 
