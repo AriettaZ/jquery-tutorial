@@ -109,11 +109,16 @@ Ariel:
 * table.html files
 * css management
 
-#### codepen demo
+#### CodePen main demos
 https://codepen.io/OSUMagic/
+#### CodePen extra demos
+https://codepen.io/channingjacobs/pens/public/
+https://codepen.io/mikelin2018/pens/public/
+https://codepen.io/ctz33/pens/public/
 
 #### Revisions
-Each team member revised their own work prior, during, and after addition to the website and presentation material. All members conducted styling and grammar revisions during a conference call and during weekly meetings. Meeting information can be found in the weekly update papers.
+Each team member revised their own work prior, during, and after addition to the website and presentation material. All members conducted styling and grammar revisions during a conference call and during weekly meetings. Meeting information can be found in the weekly update papers.**Note:** The group worked on the presentation through google drive. This was
+done because the presentation was created in google slides. Therefore, there is not as much commit activity.
 
 ### Tutorial References
 1. Official jQuery Learning Center: https://learn.jquery.com
@@ -122,4 +127,4 @@ Each team member revised their own work prior, during, and after addition to the
 4. jQuery Differences with JavaScript: https://learn.onemonth.com/jquery-vs-javascript/
 5. Free Udacity jQuery Course:  https://www.udacity.com/course/intro-to-jquery--ud245
 6. Alternative jQuery documentation browser as useful as a dictionary: http://jqapi.com/
-7. Free and succinct jQuery Tutorial: http://15daysofjquery.com/ 
+7. Free and succinct jQuery Tutorial: http://15daysofjquery.com/
