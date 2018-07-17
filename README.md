@@ -84,13 +84,14 @@ Mike:
 
 Channing:
 * Slide, Sample Assessment, handout for Manipulation and Ajax
+* 2 demos on codepen for presentation
 * ajax.html.md.erb
 * manipulation.html.md.erb
 * README.md
 
 Gail:
 * Slide, Sample Assessment, handout for Selector and Traversing
-* 4 demos on codepen for presentation
+* 3 demos on codepen for presentation
 * selector_reference.html.erb
 * selectors.html.md.erb
 * traversal.html.md.erb
