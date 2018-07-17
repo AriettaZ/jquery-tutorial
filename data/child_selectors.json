@@ -24,7 +24,7 @@
     "selects": "All &lt;p&gt; elements that are the last &lt;p&gt; element of their parent"
   },
   {
-    "selector": "$(\"[:nth-child(n)\")",
+    "selector": "$(\":nth-child(n)\")",
     "description": "Selects all elements that are the nth-child of their parent (index starts with 1). The parameter can be index, even, odd, or an equation.",
     "example": "$(\"p:nth-child(4)\")",
     "selects": "All &lt;p&gt; elements that are the 4th child of their parent"

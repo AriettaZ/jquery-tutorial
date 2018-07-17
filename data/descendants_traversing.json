@@ -2,7 +2,7 @@
   {
     "method": ".children([selector])",
     "description": "Gets all children of the selected element, optionally filtered by a selector.",
-    "example": "$(div).children()",
+    "example": "$(\"div\").children()",
     "returns": "All child elements of all &lt;div&gt; elements"
   },
   {
