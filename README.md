@@ -3,6 +3,7 @@
 ### 1. [Overview](#overview)
 ### 2. [Team](#team)
 ### 3. [Individual Contributions](#individual-contributions)
+  * **[Codepen Demo](#codepen-demo)**
   * **[Revisions](#revisions)**
 ### 4. [Tutorial References](#tutorial-references)
 
@@ -108,6 +109,12 @@ Ariel:
 * table.html files
 * css management
 
+#### codepen demo
+https://codepen.io/OSUMagic/
+
+#### Revisions
+Each team member revised their own work prior, during, and after addition to the website and presentation material. All members conducted styling and grammar revisions during a conference call and during weekly meetings. Meeting information can be found in the weekly update papers.
+
 ### Tutorial References
 1. Official jQuery Learning Center: https://learn.jquery.com
 2. Free W3schools jQuery Tutorial: https://www.w3schools.com/jquery/default.asp
@@ -116,7 +123,3 @@ Ariel:
 5. Free Udacity jQuery Course:  https://www.udacity.com/course/intro-to-jquery--ud245
 6. Alternative jQuery documentation browser as useful as a dictionary: http://jqapi.com/
 7. Free and succinct jQuery Tutorial: http://15daysofjquery.com/ 
-
-
-#### Revisions
-Each team member revised their own work prior, during, and after addition to the website and presentation material. All members conducted styling and grammar revisions during a conference call and during weekly meetings. Meeting information can be found in the weekly update papers.
